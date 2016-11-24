@@ -1,0 +1,218 @@
+<!document html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+        <link href="world.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="http://libs.useso.com/js/jquery/1.7.2/jquery.min.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script src="travel.js" type="text/javascript">
+        </script>        
+        <title>新世界</title>
+        
+        
+    </head>
+    <body >
+
+
+        
+        
+        <div id="box" class="box">
+            <div id="header" class="header">
+                <div class="header-left"></div>
+                <div class="header-right">
+                    <ul class="header-nav">
+                        <li><a href="page1.html">首页</a></li>
+                        <li><a href="page2.html">世界风景</a></li>
+                        <li><a href="#">周边动态</a></li>
+                        <li><a href="#">驴友日记</a></li>
+                        <li><a href="#">驻足签到</a></li>
+                        <li id="lastli"><a href="#">登录/注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="head">
+                <div class="head-top">
+                    <h1>世界那么大</h1>
+                </div>
+                <div class="head-top1">
+                    <h2>年轻</h2>
+                    <h2>就随心情去远走</h2>
+                    <h1>↓</h1>
+                </div>
+            </div>
+            
+            <div class="neck">
+                <div class="neck-one">
+                    <img height="250" width="100%" src="img/young3.jpg">
+                </div>
+                <div class="neck-twe">
+                    <img height="250" width="100%" src="img/young4.jpg">
+                </div>
+                <div class="neck-three">
+                    <img height="250" width="100%" src="img/young5.jpg">
+                </div>
+                <div class="neck-fore">
+                    <img height="250" width="100%" src="img/young6.jpg">
+                </div>
+            </div>
+            
+            <div class="main">
+                
+                <div class="main-one">
+                    <div class="main-left">
+                    <img height="300" width="100%" src="img/tx.jpg">
+                    </div>
+                    <div class="main-right">
+                        <h1>探险</h1>
+                        <h4>不畏艰险，造访世界最角落</h4>
+                    </div>   
+                </div>
+                
+                
+                
+                <div class="main-two">
+                    <div class="main-left">
+                        <h1>震撼</h1>
+                        <h4>唯美极光，亲近世界最两极</h4>
+                    </div>
+                    <div class="main-right">
+                        <img height="300" width="100%" src="img/bjg.jpg">
+                    </div>   
+                </div>
+                
+                
+                <div class="main-three">
+                    <div class="main-left">
+                    <img height="300px" width="100%" src="img/gaj.jpg">
+                    </div>
+                    <div class="main-right">
+                        <h1>追溯</h1>
+                        <h4>身临古城，感受远古文化</h4>
+                    </div>   
+                </div>
+                
+            </div>
+            
+            <div class="body">
+                
+               <div class="body-one">
+                   <p style="font-size:14px;color:#fff">您现在在：</p>
+             <p id="google_street" style="color:#a50716;font-size:16px"></p>               
+                   <a href="map.html">
+                   </a>
+                </div>
+                
+        <div class="body-two">
+            <img src="img/zy.png">
+                <h2 class="join">寻找同伴同行
+            </h2></br></br>
+                 <form>
+                    <lable>
+                        <p class="tishi"
+                         style="margin-left:250px">姓名：
+                           <input type="text">
+                        </p>
+                    </lable>
+                        
+                    <lable>
+                        <p class="tishi"
+                           style="margin-left:250px">性别：
+                            <input type="radio" name="sex">女
+                            <input type="radio" name="sex">男
+                        </p>
+                   </lable>
+                        
+                   <lable>
+                        <p class="tishi"
+                           style="margin-left:234px">你来自：
+                            <select>
+                                <option>中国</option>
+                                <option>美国</option>
+                                <option>英国</option>
+                                <option>德国</option>
+                                <option>法国</option>
+                            </select>
+                            <select>
+                                <option>北京</option>
+                                <option>上海
+                                </option>
+                                <option>广州</option>
+                                <option>深圳
+                                </option>
+                                <option>杭州</option>
+                            </select>
+                        </p>
+                  </lable>
+                        
+                  <lable>
+                        <p class="tishi"
+                           style="margin-left:105px">下一站你将要到达的地方：
+                            <select>
+                                <option>英国</option>
+                                <option>中国</option>
+                                <option>美国</option>
+                                <option>德国</option>
+                                <option>法国</option>
+                            </select>
+                            <select>
+                                <option>英格兰</option>
+                                <option>北爱尔兰</option>
+                                <option>苏格兰</option>
+                                <option>威尔士</option>
+                            </select>
+                        </p>
+                  </lable>
+                        
+                  <lable>
+                        <p class="tishi"
+                           style="margin-left:169px">是否只寻找老乡：
+                             <input type="radio" name="how">是
+                            <input type="radio" name="how">否
+                        </p>
+                    
+                
+                 </lable>
+                    
+                  <lable>
+                      <p class="tishi" 
+                         style="margin-left:105px">请输入您当前的随行人数：
+                            <input type="text" id="rs"></p>
+                 </lable>
+                
+                 <lable>
+                     <p class="tishi"
+                        style="margin-left:137px">请输入你的联系方式：
+                         <input class="spa"type="text" /></p>
+                 </lable>
+                     
+                <lable>
+                    <p class="tishi"
+                       style="margin-left:250px">喊话：<textarea style="vertical-align: top;width:280px;height:90px;">你可以输入你的交友宣言</textarea></p>
+               </lable>    
+                     
+               <lable>
+                   <p><input type="submit" value="确认提交" class="tijiao"></p>
+               </lable>
+                     
+                    </div>
+          
+            </div>
+            
+            
+                <div class="footer">
+                    <div class="banquan">
+                        <a href="#">&copy;背包客</a>
+                        <a href="#">版权声明</a>
+                        <a href="#">加入我们</a>
+                        <a href="#">注册</a>
+                        <a>
+                    </div>
+                </div>
+                       
+       
+        </div>
+    </body>
+</html>
